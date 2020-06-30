@@ -484,7 +484,6 @@ let i = 1;
 function drawing()
 {
     if(i>x.length) clearInterval(timer);
-    //console.log(i);
     if(i!=167 && i!=199 && i!=221)
     ctx.lineTo(x[i] * 100 + 100,y[i]*-100+100)
     else ctx.moveTo(x[i] * 100 + 100,y[i]*-100+100);
@@ -493,14 +492,4 @@ function drawing()
     i++;
 }
 
-//for(let j = 0; j < 100; j++)
-let timer = setInterval(drawing,100);
-
-
-/*for(let i = 1; i < x.length; i++)
-{
-    if(i!=167 && i!=199 && i!=221)
-    ctx.lineTo(x[i] * 100 + 100,y[i]*-100+100)
-    else ctx.moveTo(x[i] * 100 + 100,y[i]*-100+100);
-}*/
-
+let timer = setInterval(drawing,50);
