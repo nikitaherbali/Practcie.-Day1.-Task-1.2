@@ -487,7 +487,6 @@ function drawing()
     if(i!=167 && i!=199 && i!=221)
     ctx.lineTo(x[i] * 100 + 100,y[i]*-100+100)
     else ctx.moveTo(x[i] * 100 + 100,y[i]*-100+100);
-    ctx.lineWidth = 2;  
     ctx.stroke(); 
     i++;
 }
